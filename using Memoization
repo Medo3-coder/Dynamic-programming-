@@ -1,0 +1,44 @@
+// geeksforgeeks 
+
+/* C++ program for Memoized version 
+for nth Fibonacci number */
+#include <iostream>
+
+using namespace std;
+
+#define NIL -1  
+
+#define MAX 100 
+
+ int lookup[MAX];
+
+void _initalize()
+{
+    for(int i = 0 ; i < MAX ; i ++ )
+    {
+        lookup[i] = NIL ; 
+    }
+}
+
+
+int fib(int n )
+{
+    if (lookup[n]== NIL)
+    {
+        if (n<=1)
+        lookup[n]=n ; 
+        else
+          return lookup[n] = fib(n-1) + fib(n-2); 
+    }
+   
+}
+
+
+int main()
+{
+   int n = 40 ; 
+   _initalize();
+   cout <<" fibonacci number is " << fib(n) ;
+
+    return 0;
+}
