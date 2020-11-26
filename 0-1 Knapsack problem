@@ -1,3 +1,13 @@
+/*
+linkes to check back to understand 
+
+https://www.youtube.com/watch?v=8LusJS5-AGo&t=245s
+
+https://www.youtube.com/watch?v=xCbYmUPvc2Q
+*/
+
+
+
 // A Dynamic Programming based 
 // solution for 0-1 Knapsack problem 
 #include <stdio.h> 
